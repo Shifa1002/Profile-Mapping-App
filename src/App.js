@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import MapComponent from "./MapComponent"; // Adjust the path if MapComponent is in a different directory
+import "./App.css"; // Import the CSS file for styling
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Welcome to the Map Integration Example</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Explore the map below using React and Google Maps API integration.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <main>
+        <MapComponent /> {/* MapComponent renders the map */}
+      </main>
     </div>
   );
 }
